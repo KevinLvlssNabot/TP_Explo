@@ -141,7 +141,7 @@ while (continuer == 1) {
                       strcpy(lieuActuel.nom, ya.nom);
                       lieuActuel.ID = ya.ID;
                     }
-                }   else if (strcmp(lieuActuel.nom, ya.nom) == 0) { // aiguillage Alqueir
+                }   else if (strcmp(lieuActuel.nom, ya.nom) == 0) { // aiguillage Ya
                       printf("Dans quelle ville souhaitez-vous vous rendre ensuite ? Entrez l'ID de la ville choisie : ID %s: %d, ID %s: %d, ID %s: %d, ID %s: %d\n",belese.nom, belese.ID,zoinrel.nom, zoinrel.ID,alqueir.nom, alqueir.ID,sirasp.nom, sirasp.ID);
                       printf("Vous ne pouvez pas choisir les ID qui ne precedent ou ne suivent directement l'ID de %s qui est %d.\n", lieuActuel.nom, lieuActuel.ID);
                       scanf("%d", &choixID);
@@ -161,7 +161,7 @@ while (continuer == 1) {
                             strcpy(lieuActuel.nom, zoinrel.nom);
                             lieuActuel.ID = zoinrel.ID;
                           }
-                      }    else if (strcmp(lieuActuel.nom, zoinrel.nom) == 0) { // aiguillage Alqueir
+                      }    else if (strcmp(lieuActuel.nom, zoinrel.nom) == 0) { // aiguillage Zoinrel
                             printf("Dans quelle ville souhaitez-vous vous rendre ensuite ? Entrez l'ID de la ville choisie : ID %s: %d, ID %s: %d, ID %s: %d, ID %s: %d\n",belese.nom, belese.ID,ya.nom, ya.ID,alqueir.nom, alqueir.ID,sirasp.nom, sirasp.ID);
                             printf("Vous ne pouvez pas choisir les ID qui ne precedent ou ne suivent directement l'ID de %s qui est %d.\n", lieuActuel.nom, lieuActuel.ID);
                             scanf("%d", &choixID);
@@ -181,7 +181,7 @@ while (continuer == 1) {
                                   strcpy(lieuActuel.nom, ya.nom);
                                   lieuActuel.ID = ya.ID;
                                 }
-                            } else if (strcmp(lieuActuel.nom, sirasp.nom) == 0) { // aiguillage Alqueir
+                            } else if (strcmp(lieuActuel.nom, sirasp.nom) == 0) { // aiguillage Sirasp
                                   printf("Dans quelle ville souhaitez-vous vous rendre ensuite ? Entrez l'ID de la ville choisie : ID %s: %d, ID %s: %d, ID %s: %d, ID %s: %d\n",belese.nom, belese.ID,ya.nom, ya.ID,alqueir.nom, alqueir.ID,zoinrel.nom, zoinrel.ID);
                                   printf("Vous ne pouvez pas choisir les ID qui ne precedent ou ne suivent directement l'ID de %s qui est %d.\n", lieuActuel.nom, lieuActuel.ID);
                                   scanf("%d", &choixID);
